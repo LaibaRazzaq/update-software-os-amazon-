@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/perrmisionScreen"
+    android:background="@color/white"
+    tools:context=".activities.PermissionScreen">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv"
+        android:layout_marginBottom="20dp"
+        android:text="App Usage Permission Required"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/appUsage"
+        android:textSize="18sp"
+        android:id="@+id/tv"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_design"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="25dp"
+        android:text="Deny"
+        android:id="@+id/deny"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_design"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="25dp"
+        android:text="Allow"
+        android:id="@+id/allow"
+        android:layout_toRightOf="@id/deny"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progress"
+       android:progressBackgroundTint="@color/purple_700"
+
+        />
+
+</RelativeLayout>

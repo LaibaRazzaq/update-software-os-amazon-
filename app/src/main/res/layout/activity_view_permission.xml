@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.viewPermission">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+       >
+
+
+         <TextView
+             android:id="@+id/viewPermission"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="10dp"
+             android:layout_marginBottom="10dp"></TextView>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_below="@id/viewPermission"
+             android:id="@+id/amperMeterApp"
+
+            android:layout_margin="8dp"
+             android:background="@drawable/button_design"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentEnd="true"
+                 android:id="@+id/tv"
+                 android:text="Ad"
+
+                 android:padding="2dp"
+                 android:background="@color/white"
+                 android:textSize="16dp"
+                 android:layout_marginRight="5dp"
+                 android:textColor="@color/black"
+                 android:layout_alignParentRight="true"/>
+
+
+             <TextView
+             android:layout_width="wrap_content"
+
+             android:layout_height="match_parent"
+
+              android:padding="8dp"
+
+            android:layout_centerInParent="true"
+             android:text="Download Ampere Meter App"
+
+             android:textColor="@color/white"
+             android:textSize="18dp"></TextView>
+
+    </RelativeLayout>
+
+     </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="4dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="10dp"
+    android:id="@+id/rl"
+
+    android:layout_marginBottom="2dp"
+    android:backgroundTint="@color/gnt_white"
+     android:background="@drawable/ripple_effect_file"
+    android:layout_height="80dp">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="@color/gnt_black"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_sensor1"
+        android:layout_centerVertical="true"
+        >
+
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="16sp"
+        android:textColor="@color/gnt_black"
+
+        android:id="@+id/textView"
+        android:text="Sensor"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/textView"
+        android:text="Type"
+        android:textSize="14sp"
+        android:textColor="@color/gnt_gray"
+        android:layout_marginLeft="12dp"
+        ></TextView>
+
+
+
+
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentEnd="true"
+         android:layout_centerVertical="true"
+         android:src="@drawable/baseline_navigate_next_24"
+         />
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rl"
+    tools:context=".activities.CleanActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:id="@+id/totalJunk"
+        android:textColor="@color/gnt_black"
+        android:text="Junk File Found: 26 MB"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/no_junk_found"
+        app:lottie_autoPlay="true"
+        android:id="@+id/noFound"
+
+        android:visibility="gone"
+        app:lottie_loop="true"
+        android:adjustViewBounds="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/delete"
+        app:lottie_autoPlay="true"
+        android:background="@color/white"
+        android:id="@+id/cleaning"
+
+        app:lottie_loop="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+      android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:text="Cleaning Proccess..."
+        android:textColor="@color/gnt_black"
+/>
+</RelativeLayout>

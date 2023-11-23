@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="10dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp"
+        android:id="@+id/detailApp"
+
+        app:cardBackgroundColor="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/whatsapp"
+                ></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Name"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                ></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:text="13456"
+                    android:id="@+id/size_text_view"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ></TextView>
+
+                <TextView
+                    android:gravity="center"
+                    android:text="13456"
+                    android:id="@+id/version_text_view"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

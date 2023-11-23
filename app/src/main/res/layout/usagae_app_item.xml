@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+   android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+
+    android:background="@drawable/app_usage_bg"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/image"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_person" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image"
+
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toEndOf="@id/image"
+     android:text="WhatsApp"
+     android:layout_weight="1"
+     android:layout_marginStart="10dp"
+     android:textColor="@color/black"
+     android:textSize="16sp"
+     android:id="@+id/package_name"
+     android:layout_centerHorizontal="true"
+     ></TextView>
+   <TextView
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true"
+       android:text="12 h 6 m "
+       android:layout_weight="1"
+          android:textAlignment="textEnd"
+       android:textColor="@color/black"
+       android:id="@+id/usage_time"
+       android:textSize="14sp"
+       android:layout_marginEnd="7dp"
+       ></TextView>
+        </LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:orientation="horizontal"
+     android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="8"
+        android:progressBackgroundTint="#b9b9ba"
+        android:progressTint="#36454F"
+        android:layout_toEndOf="@id/image"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_below="@id/text"
+
+        android:layout_marginStart="10dp"
+
+        ></ProgressBar>
+     <TextView
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:text="20%"
+         android:id="@+id/usage_perc_tv"
+         android:layout_marginEnd="6dp"
+         android:textAlignment="textEnd"
+         ></TextView>
+ </LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_marginTop="3dp"
+     android:paddingBottom="5dp"
+     >
+     <TextView
+         android:layout_width="0dp"
+        android:layout_weight="1"
+         android:text="Last Time Used:"
+         android:textSize="14sp"
+         android:layout_marginStart="10dp"
+         android:layout_height="wrap_content"></TextView>
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+          android:layout_weight="1"
+         android:text="2:34 pm "
+         android:textAlignment="textEnd"
+         android:textSize="14sp"
+         android:id="@+id/last_time_used"
+         android:layout_marginEnd="6dp"
+         ></TextView>
+
+ </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

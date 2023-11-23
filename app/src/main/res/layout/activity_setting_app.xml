@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_buuton"
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Notification Setting "
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:id="@+id/heading_text_view"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading_text_view"
+            android:layout_marginTop="@dimen/activity_topinner_layout_margin"
+            >
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_weight="8"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:id="@+id/detaile_text_view"
+                android:text="Google Play Services"/>
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:layout_marginLeft="15dp"
+                android:checked="false"
+                android:id="@+id/notification_button"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

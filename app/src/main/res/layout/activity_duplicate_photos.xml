@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DuplicatePhotos">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/permissionReq"
+        android:text="Permission Required"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:text="Request Permission"
+        android:id="@+id/requestPermission"
+        android:background="@drawable/button_design"
+        android:layout_alignParentBottom="true"
+
+        />
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+
+     android:id="@+id/layout"
+     android:visibility="gone"
+     android:background="@drawable/ripple_effect_file"
+
+     >
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:text="Scanning \n Images"
+         android:textColor="@color/white"
+         android:textSize="18sp"
+         android:id="@+id/tv"
+         android:visibility="gone"
+         />
+     <com.airbnb.lottie.LottieAnimationView
+         android:id="@+id/progressBar"
+         android:layout_width="300dp"
+         android:layout_height="300dp"
+
+         android:adjustViewBounds="true"
+         app:lottie_autoPlay="true"
+         app:lottie_loop="true"
+
+         app:lottie_rawRes="@raw/scan_jpg"
+         android:visibility="gone"
+         android:layout_centerInParent="true"
+         />
+
+ </RelativeLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    tools:listitem="@layout/duplicate_photos_item"
+    android:id="@+id/photosRcv"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectImages"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+
+        android:layout_alignParentBottom="true"
+        android:text="Select Images"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delBtn"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@drawable/button_design"
+        android:layout_alignParentBottom="true"
+        android:text="Delete"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Duplicate photo found"
+        android:textColor="@color/gnt_black"
+        android:textSize="18sp"
+        android:id="@+id/noFound"
+        android:visibility="gone"
+        />
+</RelativeLayout>

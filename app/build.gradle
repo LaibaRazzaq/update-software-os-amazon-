@@ -1,0 +1,157 @@
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdk 34
+    buildToolsVersion '34.0.0'
+    defaultConfig {
+        applicationId "com.nzdeveloper.updatlatestesoftwareandroid"
+        minSdkVersion 21
+        vectorDrawables.useSupportLibrary = true
+        targetSdkVersion 34
+        versionCode 18
+        versionName "1.0.8"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        lintOptions {
+            checkReleaseBuilds false
+        }
+
+
+    }
+    buildTypes {
+        release {
+            //native ads
+            resValue "string", "admobe_app_id", "ca-app-pub-6151128815912996~2500449066"
+//            resValue "string", "admobe_back_nativ", "ca-app-pub-6151128815912996/3185328973"
+//            resValue "string", "admobe_native_system", "ca-app-pub-6151128815912996/8246083968"
+//            resValue "string", "admobe_native_download", "ca-app-pub-6151128815912996/5619920623"
+//            resValue "string", "admobe_native_uninstall", "ca-app-pub-6151128815912996/3086360279"
+//
+//              //banner ads
+//            resValue "string", "admobe_banner_detail", "ca-app-pub-6151128815912996/7423956884"
+//            resValue "string", "admobe_banner_main", "ca-app-pub-6151128815912996/6302446906"
+//
+//
+//            //interstitial ads
+//            resValue "string", "admobe_interestitial_splash", "ca-app-pub-6151128815912996/2422881455"
+//            resValue "string", "admobe_interestitial_system_app_back", "ca-app-pub-6151128815912996/9968514772"
+//            resValue "string", "admobe_interestitial_installed_app_back", "ca-app-pub-6151128815912996/6029269764"
+//            resValue "string", "admobe_intertesial_back", "ca-app-pub-6151128815912996/3019963048"
+//            resValue "string", "admobe_intertesial_senser", "ca-app-pub-6151128815912996/3480812256"
+//            resValue "string", "admobe_interestitial_sensor_detail_back", "ca-app-pub-6151128815912996/8541567241"
+//            resValue "string", "admobe_intertesial_appUsage", "ca-app-pub-6151128815912996/7036913888"
+//            resValue "string", "admobe_intertesial_download", "ca-app-pub-6151128815912996/7601978998"
+//            resValue "string", "admobe_intertesial_system", "ca-app-pub-6151128815912996/6288897328"
+//            resValue "string", "admobe_interestitial_phone_info_back", "ca-app-pub-6151128815912996/7036913888"
+//            resValue "string", "admobe_interestitial_unistall_back", "ca-app-pub-6151128815912996/3480812256"
+//            resValue "string", "admobe_interestitial_test_mobile_back", "ca-app-pub-6151128815912996/3480812256"
+//            resValue "string", "admobe_interestitial_junk_cleaner_back", "ca-app-pub-6151128815912996/8541567241"
+//
+//            resValue "string", "admobe_interestitial_duplicate_back", "ca-app-pub-6151128815912996/8541567241"
+//
+//
+//
+//            resValue "string", "admobe_app_open", "ca-app-pub-6151128815912996/9728630647"
+
+
+
+            //new ad
+
+
+
+
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+        }
+        debug {
+            resValue "string", "admobe_app_id", "ca-app-pub-3940256099942544~3347511713"
+//
+//            resValue "string", "admobe_banner_detail", "ca-app-pub-3940256099942544/6300978111"
+//            resValue "string", "admobe_banner_main", "ca-app-pub-3940256099942544/6300978111"
+//
+//
+//
+//            resValue "string", "admobe_native_download", "ca-app-pub-3940256099942544/2247696110"
+//            resValue "string", "admobe_native_system", "ca-app-pub-3940256099942544/2247696110"
+//            resValue "string", "admobe_back_nativ", "ca-app-pub-3940256099942544/2247696110"
+//            resValue "string", "admobe_native_uninstall", "ca-app-pub-3940256099942544/2247696110"
+//
+//            resValue "string", "admobe_intertesial_download", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_intertesial_system", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_intertesial_back", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_intertesial_senser", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_intertesial_appUsage", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_interestitial_splash", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_interestitial_sensor_detail_back", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_interestitial_phone_info_back", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_interestitial_unistall_back", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_interestitial_test_mobile_back", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_interestitial_junk_cleaner_back", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_interestitial_installed_app_back", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_interestitial_system_app_back", "ca-app-pub-3940256099942544/1033173712"
+//            resValue "string", "admobe_interestitial_duplicate_back", "ca-app-pub-3940256099942544/1033173712"
+//
+//
+//            resValue "string", "admobe_app_open", "ca-app-pub-3940256099942544/3419835294"
+
+
+            //new ads
+
+
+
+
+
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    namespace 'com.example.appUpdate'
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'me.itangqi.waveloadingview:library:0.3.5'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'org.jsoup:jsoup:1.14.3'
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.blankj:utilcodex:1.30.6'
+    implementation 'com.google.android.gms:play-services-ads-lite:22.5.0'
+
+
+//    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+//    implementation 'com.facebook.android:audience-network-sdk:5.+'
+    def lifecycle_version = '2.0.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation 'com.appbrain:appbrain-sdk:+'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation "androidx.biometric:biometric:1.1.0"
+    // RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.3.1'
+    implementation 'com.airbnb.android:lottie:4.2.2'
+    // CardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation("com.google.firebase:firebase-config")
+    implementation 'com.google.firebase:firebase-analytics'
+}

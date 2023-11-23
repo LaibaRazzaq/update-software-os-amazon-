@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Update Software Info</string>
+    <string name="rate_heading">Rate Upgrade Software checker</string>
+    <string name="rate_message">"If you enjoy using this app please take a moment to rate it .Thanks for your support!"</string>
+    <string name="rate_now">RATE NOW</string>
+    <string name="no_thanks">NO THANKS</string>
+    <string name="later">LATER</string>
+    <string name="default_notification_channel_id">fcm_notification_channel</string>
+    <string name="facebook_app_id">547434539222463</string>
+    <string name="installed_apps">PlayStore Application</string>
+    <string name="system_apps">Mobile Applications</string>
+    <string name="system_update">System Update</string>
+    <string name="rate">Rate Our App</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="battery">Battery Info</string>
+    <string name="phone">Phone Info</string>
+    <string name="tiktok">Other Apps</string>
+    <string name="view_update">View Update</string>
+    <string name="launch">Launch</string>
+    <string name="permission">View Permission</string>
+    <string name="delete">Un Install</string>
+    <string name="app_info">App Info</string>
+
+    <string name="defultHealthString">Unknown</string>
+    <string name="deadHealthString">Dead</string>
+    <string name="goodHealthString">Good</string>
+    <string name="overHeatHealthString">Over Heat</string>
+    <string name="overVoltageHealthString">Over Voltage</string>
+    <string name="faliureHealthString">Failure</string>
+
+    <string name="defult_plug_type">Unknown</string>
+    <string name="AC_plug_type">AC</string>
+    <string name="Usb_plug_type">USB</string>
+    <string name="appUsage">Using this app and its feature requires access to data about your installed apps which we colloect and store locally to provide you with the usage time data of each app</string>
+    <string name="today_app_usage_time">Today App usage time</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="the_software_update_info_app_requires_permission_to_read_phone_state_to_provide_accurate_information_about_your_device_s_network_and_sim_information">The Software Update Info app requires permission to read phone state to provide accurate information about your devices network and SIM information.</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="lightSensor">Cover the above the display . Is the value changing?</string>
+    <string name="light">Light Sensor</string>
+    <string name="Accelerometer">Accelerometer</string>
+    <string name="Accelerometer_dec">Shake your device.Did you feel vibration?</string>
+    <string name="microPhoneDesc">Speak to the microphone. Is the progress changing?</string>
+    <string name="microphone">Microphone</string>
+    <string name="are_you_satisfied_with_ampere_meter_s_information_about_your_device">Are you satisfied with Update Software Info?</string>
+    <string name="attach_file">Attach file</string>
+    <string name="tap_here_to_enter_text">Tap here to enter text</string>
+    <string name="feedback">Feedback</string>
+    <string name="how_was_your_experience">How was Your Experience?</string>
+    <string name="provide_us_your_valuable_feedback_and_rating">Provide us your valuable feedback and rating</string>
+    <string name="please_specify_the_difficulty_you_are_facing">Please specify the difficulty you are facing.</string>
+    <string name="poor_information">#Poor information</string>
+    <string name="ads">#Ads</string>
+    <string name="others">#Others</string>
+    <string name="yes">Yes</string>
+    <string name="not_really">Not Really</string>
+    <string name="action_Rate">Rate Us</string>
+    <string name="submit">Submit</string>
+    <string name="help_us_locate_and_solve_your_problem_more_quicky_please_provide_us_with_detailed">Help us locate and solve your problem more quicky,please provide us with detailed</string>
+</resources>

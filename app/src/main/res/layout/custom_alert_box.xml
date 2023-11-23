@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangel_white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="10dp"
+
+    android:backgroundTint="@color/layout_background"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:tint="@color/purple_700"
+            android:id="@+id/closePannel2"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/baseline_clear_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_was_your_experience"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="5dp"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:textColor="#939090"
+            android:layout_height="wrap_content"
+
+            android:text="@string/provide_us_your_valuable_feedback_and_rating"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/emoji1"
+
+            android:id="@+id/emoji"
+            android:layout_marginTop="10dp"
+            />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progressTint="@color/purple_700"
+
+            android:id="@+id/rating_bar"
+            android:layout_marginTop="10dp"
+            android:rating="3"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/rateUs"
+            android:clickable="true"
+            android:focusable="true"
+             android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/purple_700"
+            android:background="@drawable/gnt_rounded_corners_shape"
+            android:padding="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@string/action_Rate"
+                />
+        </LinearLayout>
+
+
+</LinearLayout>

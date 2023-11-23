@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+
+    tools:context=".activities.uninstallSelectedApps">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:visibility="gone"
+        android:id="@+id/unistllalScreen">
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search.."
+            android:visibility="gone"
+            android:iconifiedByDefault="false">
+
+        </SearchView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/uninstallRcv"
+            android:layout_below="@id/search"
+            android:layout_above="@id/uninstallBtn"
+            tools:listitem="@layout/uninstall_item"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ripple_effect_file"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/uninstallBtn"
+            android:elevation="4dp"
+            android:textAllCaps="false"
+            android:text="Uninstall"
+
+            />
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+
+
+        android:progressTint="@color/purple_700" />
+
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/pleaseWait"
+    android:adjustViewBounds="true"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+
+
+     android:layout_below="@id/progressBar"
+    app:lottie_rawRes="@raw/pleasewait"/>
+
+</RelativeLayout>

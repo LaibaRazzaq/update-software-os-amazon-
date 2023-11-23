@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/rectangel_white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="10dp"
+
+    android:backgroundTint="@color/layout_background"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_gravity="end"
+        app:tint="@color/purple_700"
+        android:id="@+id/closePannel1"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/baseline_clear_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        android:textAlignment="center"
+android:text="@string/are_you_satisfied_with_ampere_meter_s_information_about_your_device"        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/emoji2"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="20dp"
+
+        >
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tv_time_color"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:id="@+id/notReally"
+            android:textAlignment="center"
+            android:text="@string/not_really"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:padding="12dp"
+            android:id="@+id/yes"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:text="@string/yes"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

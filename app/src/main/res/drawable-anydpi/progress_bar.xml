@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <item >
+        <shape android:shape="ring"
+         android:useLevel="false"
+          android:thicknessRatio="16"
+
+            >
+            <gradient android:centerColor="@color/gnt_red" android:endColor="@color/gnt_ad_green"
+                android:startColor="@color/gnt_black"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="ring"
+            android:thicknessRatio="16"
+            android:useLevel="false"
+
+
+            >
+            <gradient android:startColor="@color/gnt_ad_green" android:endColor="@color/gnt_red"
+                 android:centerColor="#F9A825"
+
+                />
+        </shape>
+    </item>
+
+
+
+</layer-list>

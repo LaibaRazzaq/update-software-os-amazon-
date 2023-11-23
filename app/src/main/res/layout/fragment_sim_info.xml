@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/simInfo"
+
+    tools:context=".activities.SimInfo">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/text1"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/text2"
+        android:text="Permission Required"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:visibility="gone"
+        android:text="@string/the_software_update_info_app_requires_permission_to_read_phone_state_to_provide_accurate_information_about_your_device_s_network_and_sim_information"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Allow"
+        android:visibility="gone"
+        android:id="@+id/allow"
+        android:textColor="@color/white"
+        android:background="@drawable/button_design"
+        android:layout_below="@id/text1"
+        />
+
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/linear"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/text"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="SIM Card Information"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/round_buuton"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="SIM Operator:"
+
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Zong"
+                android:id="@+id/simOp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+
+                android:textSize="16dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:elevation="4dp"
+
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/round_buuton"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="SIM Country ISO:"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Zong"
+                android:id="@+id/simIso"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/round_buuton"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Is Roaming:"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Zong"
+                android:id="@+id/isRoaming"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Network Information"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/round_buuton"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Network Type:"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Zong"
+                android:id="@+id/networkType"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+
+                android:textSize="16dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/round_buuton"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Data Connection:"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Zong"
+                android:id="@+id/dataConnection"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+
+                android:textSize="16dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/round_buuton"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Network Country ISO"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Zong"
+                android:id="@+id/networkCountryIoS"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+
+                android:textSize="16dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/round_buuton"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Operator ID:"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Zong"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:id="@+id/operatorId"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/round_buuton"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Operator Name:"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Zong"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+               android:id="@+id/operatorName"
+                android:textSize="16dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/photoEditor"
+            android:layout_marginVertical="20dp"
+
+            android:elevation="4dp"
+            android:background="@drawable/button_design"
+
+            android:paddingHorizontal="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginVertical="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Download Photo Editor"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+
+                android:background="@color/white"
+                android:paddingHorizontal="5dp"
+                android:text="AD"
+                android:textColor="@color/black"
+                android:paddingVertical="4dp"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:WaveLoadingView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainContainner"
+    android:background="@color/gnt_outline"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.MainActivity"
+    android:orientation="vertical"
+
+    android:scrollbars="vertical"
+    >
+    <ProgressBar
+        android:id="@+id/progressBarMain"
+
+        style="?android:attr/progressBarStyleLarge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_height="wrap_content"
+
+
+
+
+
+
+
+        android:indeterminate="true"
+
+        android:visibility="gone"  />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_main"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:id="@+id/text"
+                                        android:textStyle="bold|italic"
+                                        android:textColor="@color/white"
+
+                                        android:text="Software Update"
+                                        android:textSize="20sp"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="7dp"
+                                        android:background="@drawable/main_bg_1"
+                                        android:textSize="16sp"
+                                        android:textAlignment="center"
+                                        android:paddingBottom="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingStart="10dp"
+                                        android:textStyle="italic"
+                                        android:paddingEnd="16dp"
+                                        android:text="Update your device"
+                                        android:textColor="@color/purple_700"
+                                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                                    <me.itangqi.waveloadingview.WaveLoadingView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="170dp"
+                                        android:id="@+id/waveLoadingViewRAM"
+                                        app:wlv_borderColor="@color/white"
+                                        app:wlv_borderWidth="6dp"
+                                        app:wlv_progressValue="80"
+                                        app:wlv_titleBottom="Ram"
+                                        app:wlv_titleBottomColor="@color/white"
+                                        app:wlv_titleCenter="32%"
+                                        app:wlv_titleCenterColor="@color/white"
+
+                                        app:wlv_waveAmplitude="70"
+                                        app:wlv_waveColor="#25096C2F" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp"-->
+
+<!--                >-->
+
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="50dp"-->
+<!--                    android:id="@+id/text"-->
+<!--                    android:textStyle="bold|italic"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:text="Software Update"-->
+<!--                    android:textSize="20sp"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:background="@drawable/main_bg_1"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:paddingBottom="5dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:layout_below="@id/text"-->
+<!--                    android:textStyle="italic"-->
+<!--                    android:paddingRight="16dp"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:text="Update your device"-->
+<!--                    android:textColor="@color/purple_700"-->
+<!--                    />-->
+
+<!--                <me.itangqi.waveloadingview.WaveLoadingView-->
+<!--                    android:layout_width="170dp"-->
+<!--                    android:layout_height="170dp"-->
+<!--                    android:id="@+id/waveLoadingViewRAM"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    app:wlv_borderColor="@color/white"-->
+<!--                    app:wlv_borderWidth="6dp"-->
+<!--                    app:wlv_progressValue="80"-->
+<!--                    app:wlv_titleBottom="Ram"-->
+<!--                    app:wlv_titleBottomColor="@color/white"-->
+<!--                    app:wlv_titleCenter="32%"-->
+<!--                    app:wlv_titleCenterColor="@color/white"-->
+
+<!--                    app:wlv_waveAmplitude="70"-->
+<!--                    app:wlv_waveColor="#25096C2F" />-->
+<!--            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="150dp"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+
+                        android:id="@+id/systemAppBtn"
+                        android:layout_marginBottom="3dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_system_app" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="System \nApps "
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="150dp"
+
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+                        android:gravity="center"
+                        android:id="@+id/installedAppBtn"
+                        android:layout_marginBottom="3dp"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_install_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Installed \nApps "
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+
+                    android:layout_marginTop="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:id="@+id/systemUpdateBtn"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+                        android:orientation="vertical"
+                          android:gravity="center"
+                        android:layout_marginBottom="3dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            app:tint="@color/gnt_green"
+                            android:src="@drawable/ic_update" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="System \nUpdate "
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+                        android:layout_weight="1"
+                        android:id="@+id/sensor"
+
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        android:paddingBottom="5dp"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+
+                            android:src="@drawable/ic_sensor_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Mobile\n Sensor "
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:id="@+id/adView"
+                    android:visibility="gone"
+                    android:layout_marginVertical="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                >
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/phoneInfo"
+
+                        android:gravity="center"
+
+                        android:layout_marginBottom="3dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:src="@drawable/ic_phone_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Phone\n Info "
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="150dp"
+                       android:orientation="vertical"
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+
+                        android:id="@+id/appUsage"
+                        android:gravity="center"
+
+                        android:layout_marginBottom="3dp"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_baseline_data_usage_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Mobile\nUsage "
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal"
+
+                    android:layout_marginTop="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        android:id="@+id/junkLayout"
+
+                        android:layout_marginBottom="3dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_clean_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Clean\n Junk "
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                      android:layout_weight="1"
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/duplicatePhotoslayout"
+
+                        android:layout_marginBottom="3dp"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_photo_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Duplicate\n Photos "
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="150dp"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+                         android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/unInstallApp"
+
+                        android:layout_marginBottom="3dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+
+                            android:src="@drawable/ic_baseline_delete_forever_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Uninstall\n Apps "
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+
+                           android:gravity="center"
+                        android:id="@+id/testMobile"
+
+                        android:layout_marginBottom="3dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:src="@drawable/ic_phone_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Test\n Mobile "
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+
+
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+
+                        android:id="@+id/rateUsBtn"
+                        android:layout_marginBottom="3dp"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+
+                            android:src="@drawable/android_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Rate Us"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+
+
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+
+                        android:id="@+id/share"
+
+                        android:layout_marginBottom="3dp"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/baseline_share_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold|italic"
+                            android:text="Share\n App"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/ad"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+                        android:layout_marginBottom="3dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:text="Ad"
+                              android:layout_alignParentRight="true"
+
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold|italic"
+                                android:text="Download\nPlay Service\n App "
+                                />
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/main_bg_1"
+                        android:elevation="6dp"
+                        android:gravity="center"
+                        android:id="@+id/moreApps"
+
+                        android:orientation="vertical"
+                        android:layout_marginBottom="3dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+
+                            >
+                            <TextView
+                                android:layout_gravity="end"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+
+                                android:layout_marginEnd="10dp"
+                                android:text="Ad"
+                                android:textColor="@color/black"
+
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Download \n Photo Editor \n App "
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

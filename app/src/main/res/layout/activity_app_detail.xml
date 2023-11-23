@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+   android:background="@color/gnt_outline"
+    android:orientation="vertical"
+    tools:context=".activities.AppDetailActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_item"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/appIcon"
+                        android:src="@drawable/ic_person"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="4"
+                    android:layout_marginStart="10dp"
+                    android:elevation="4dp"
+                    android:layout_marginEnd="8dp"
+
+
+
+                    android:background="@drawable/main_bg_1"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="15dp"
+                        android:layout_gravity="center_vertical"
+
+                        tools:ignore="RtlSymmetry">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="App Name"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WhatsApp"
+                            android:id="@+id/appName"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_item"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/ic_person"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:elevation="4dp"
+                    android:layout_marginEnd="8dp"
+
+
+
+                    android:background="@drawable/main_bg_1"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="15dp"
+                        android:layout_gravity="center_vertical"
+
+                        android:paddingLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="App Version"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WhatsApp"
+                            android:id="@+id/appVersion"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_gravity="center"
+                android:id="@+id/adView"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginVertical="16dp"
+             >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_item"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_person"
+                        android:layout_gravity="center_vertical"
+                        ></ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="4"
+                    android:elevation="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/main_bg_1"
+                    android:layout_marginStart="10dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="15dp"
+                        android:layout_gravity="center_vertical"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="App Package"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WhatsApp"
+                            android:id="@+id/packageName"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_item"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_person"
+                        android:layout_gravity="center_vertical"
+                        ></ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="4"
+                    android:layout_marginStart="10dp"
+                    android:elevation="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/main_bg_1"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="15dp"
+                        android:layout_gravity="center_vertical"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="App Size"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WhatsApp"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:id="@+id/appSize"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_item"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_person"
+                        android:layout_gravity="center_vertical"
+                        ></ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="4"
+                    android:layout_marginStart="10dp"
+                    android:elevation="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/main_bg_1"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="15dp"
+                        android:layout_gravity="center_vertical"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Installed Date"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WhatsApp"
+                            android:id="@+id/installDate"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            ></TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_item"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_person"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:id="@+id/appInfoAppBtn"
+                    android:layout_marginStart="10dp"
+                    android:elevation="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/main_bg_1"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="15dp"
+                        android:layout_gravity="center_vertical"
+
+                        android:paddingLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="App Info"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            ></TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                       android:layout_alignParentEnd="true"
+                       android:src="@drawable/baseline_navigate_next_24"
+
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_item"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_person"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:id="@+id/viewPermissionlayout"
+                    android:layout_marginStart="10dp"
+                    android:elevation="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/main_bg_1"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="15dp"
+                        android:layout_gravity="center_vertical"
+
+                        android:paddingLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View Permission"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            ></TextView>
+
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/baseline_navigate_next_24"
+
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_design"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Check Update"
+                    android:textColor="@color/white"
+                    android:id="@+id/updateAppBtn"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    ></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Launch App"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:id="@+id/launchAppBtn"
+                    android:layout_marginLeft="10dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_design"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    ></Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Uninstall App"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:id="@+id/unInstallApp"
+                    android:layout_marginLeft="10dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_design"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    ></Button>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

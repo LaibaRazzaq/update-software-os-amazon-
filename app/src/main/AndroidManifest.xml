@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" /> <!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".activities.Myapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.MultiTouchScreen"/>
+        <activity android:name=".activities.ColorsActivity" />
+        <activity android:name=".activities.SensorDetail" />
+        <activity android:name=".activities.phoneInfoMaiin" />
+        <activity android:name=".activities.appUsageActivity" />
+        <activity android:name=".activities.uninstallSelectedApps" />
+        <activity android:name=".activities.JunkCleaner" />
+        <activity android:name=".activities.DeleteJunk" />
+        <activity android:name=".activities.CleanActivity" />
+        <activity android:name=".activities.TestMobile" />
+        <activity android:name=".activities.TestDetailActivity" />
+        <activity
+            android:name=".activities.PermissionScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activities.viewPermission" />
+        <activity android:name=".activities.DuplicatePhotos" />
+        <activity android:name=".activities.Systemappactivity" />
+        <activity android:name=".activities.InstallappsActivity" />
+        <activity android:name=".activities.PhoneInfoActivity" />
+        <activity android:name=".activities.PrivacyActivity" />
+        <activity android:name=".activities.SensorActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="205628453837390" />
+
+        <activity
+            android:name=".activities.AppDetailActivity"
+            android:exported="true">
+            <intent-filter android:priority="1">
+                <action android:name="android.intent.action.DELETE" />
+                <action android:name="android.intent.action.UNINSTALL_PACKAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </activity> <!-- <activity android:name=".activities.installAppsActivity" /> -->
+        <activity android:name=".activities.MainActivity" />
+        <activity
+            android:name=".activities.splashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+
+            android:value="@string/admobe_app_id" />
+        <meta-data android:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED"
+            android:value="true" />
+
+    </application>
+
+</manifest>

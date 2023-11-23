@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MultiTouchScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/totalTouch"
+        android:text="Touch Detected: 0"
+        android:elevation="8dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        >
+
+    </TextView>
+    <com.example.appUpdate.activities.TouchLinesView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/touch_view"
+        android:background="@color/black"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:background="@drawable/button_design"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="90dp"
+        android:text="Yes"
+        android:id="@+id/yes"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:background="@drawable/button_design"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="90dp"
+        android:text="No"
+        android:id="@+id/no"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>
